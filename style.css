@@ -1,0 +1,315 @@
+* {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: f1bff;
+}
+
+.card-body p{
+	font-weight: 50;
+}
+
+.card-body h3 {
+	font-size: 30px;
+	font-weight: 50;
+}
+
+.card-body a {
+	text-decoration: none;
+	color: rgb(145, 0, 0);
+	padding: 0.8rem;
+	border: 1px solid rgb(145, 0, 0);
+}
+
+.location {
+	background-color: #e4e4e4;
+}
+
+.location h3 {
+	font-weight: 10;
+}
+
+.location p {
+	font-weight: 50;
+}
+
+.map-area {
+	width: 600px;
+	height: 465px;
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.35);
+}
+
+.map-area iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	
+}
+
+.contact-area h3 {
+	font-weight: 100;
+	font-size: 50px;
+	margin-left: 70px;
+}
+
+.contact-area p {
+	font-weight: 40;
+	font-size: 17px;
+	margin-left: 70px;
+}
+
+.page-section {
+	padding: 8rem 0;
+	font-size: 20px;
+	font-weight: 50;
+	background-color: #ededed;
+}
+
+.page-section h3 {
+	font-weight: 100;
+	font-size: 40px;
+}
+
+.card-body a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: rgb(145, 0, 0);
+	padding: 0.8rem;
+	border: 1px solid rgb(145, 0, 0);
+	transition-duration: 1s;
+}
+
+.section-padding {
+	padding: 100px 0;
+}
+
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+
+.carousel-caption {
+	bottom: 150px;
+	padding: 40px;
+	z-index: 2;
+}
+
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-weight: 100;
+}
+
+
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	font-weight: 50;
+}
+
+.carousel-caption a {
+	text-decoration: none;
+	color: white;
+	background-color: rgb(145, 0, 0);
+	padding: 15px 60px;
+	border: 2px solid white;
+	margin: -5%;
+	font-size: 20px;
+}
+
+.carousel-caption a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: rgb(109, 0, 0);
+	padding: 15px 60px;
+	border: 2px solid white;
+	margin: -5%;
+	font-size: 20px;
+	transition-duration: 1s;
+}
+
+.carousel-inner::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding: 1rem 0;
+} 
+
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.navbar ul li a {
+	font-size: 15px;
+	font-weight: 300;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.navbar ul li::after {
+	content: "";
+	height: 2px;
+	width: 0;
+	background: red;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: 0.6s;
+}
+
+.navbar ul li:hover::after {
+	width: 100%;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+	color: #000;
+}
+
+.navbar-light .navbar-nav .navbar-link {
+	color: #000;
+}
+
+.w-100 {
+	height: 120vh;
+	object-fit: cover;
+	margin-top: 60px;
+}
+
+
+/* .team .card-body {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+} */
+
+/* Mød os section */
+.team .card-body h3{
+	font-size: 25px;
+}
+
+.team .card-body p{
+	font-size: 15px;
+}
+
+.copyright p{
+	background-color: #a0a0a0;
+	color: #fff;
+	padding: 2rem;
+}
+
+/* responsive css */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	.carousel-caption {
+		bottom: 150px;
+	}
+
+	.carousel-caption p {
+		width: 100%;
+	}
+}
+
+/* for medium size */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.carousel-caption {
+		bottom: 150px;
+	}
+
+	.carousel-caption p {
+		width: 100%;
+	}
+}
+
+/* for small size */
+@media only screen and (max-width: 767px){
+	.navbar-nav {
+		text-align: center;
+	}
+	
+	.carousel-caption {
+		bottom: 125px;
+	}
+	
+	.carousel-caption h5 {
+		font-size: 35px;
+	}
+	
+	.carousel-caption a {
+		padding: 10px 15px;
+	}
+
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 20px;
+	}
+}
+
+
+/* Mød os sektionen */
+.section-header h3 {
+	font-weight: 100;
+	font-size: 40px;
+	padding-top: 3rem;
+}
+
+.section-header p {
+	font-weight: 100;
+	font-size: 20px;
+	padding-top: 1.5rem;
+}
+
+/* Kontakt */
+
+.page-section2 {
+	padding: 8rem 0;
+	font-size: 20px;
+	font-weight: 50;
+	background-color: #ffffff;
+}
+
+.page-section2 h3 {
+	font-weight: 100;
+	font-size: 40px;
+}
+
+.faq {
+	padding-top: 8rem;
+	padding-bottom: 8rem ;
+}
+
+.pic::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
