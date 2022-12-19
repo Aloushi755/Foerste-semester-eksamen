@@ -73,6 +73,11 @@ body {
 	font-size: 40px;
 }
 
+.page-section p {
+	font-weight: 50;
+	letter-spacing: 0.5px;
+}
+
 .card-body a:hover {
 	text-decoration: none;
 	color: white;
@@ -92,7 +97,7 @@ body {
 }
 
 .carousel-caption {
-	bottom: 150px;
+	bottom: 90px;
 	padding: 40px;
 	z-index: 2;
 }
@@ -115,24 +120,11 @@ body {
 }
 
 .carousel-caption a {
-	text-decoration: none;
-	color: white;
-	background-color: rgb(145, 0, 0);
-	padding: 15px 60px;
-	border: 2px solid white;
-	margin: -5%;
 	font-size: 20px;
-}
-
-.carousel-caption a:hover {
-	text-decoration: none;
-	color: white;
-	background-color: rgb(109, 0, 0);
-	padding: 15px 60px;
-	border: 2px solid white;
-	margin: -5%;
-	font-size: 20px;
-	transition-duration: 1s;
+	font-weight: 200;
+	padding: 5px 25px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 .carousel-inner::before {
@@ -173,20 +165,11 @@ body {
 	text-transform: uppercase;
 }
 
-.navbar ul li::after {
-	content: "";
-	height: 2px;
-	width: 0;
-	background: red;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	transition: 0.6s;
+.navbar ul li:hover {
+	background-color: rgb(230, 230, 230);
+	border-radius: 6px;
 }
 
-.navbar ul li:hover::after {
-	width: 100%;
-}
 
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
@@ -197,16 +180,16 @@ body {
 	color: #000;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
 .w-100 {
 	height: 120vh;
 	object-fit: cover;
 	margin-top: 60px;
 }
 
-
-/* .team .card-body {
-	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
-} */
 
 /* Mød os section */
 .team .card-body h3{
@@ -232,6 +215,10 @@ body {
 	.carousel-caption p {
 		width: 100%;
 	}
+
+	.contact-area h3 {
+		font-size: 30px;
+	}
 }
 
 /* for medium size */
@@ -243,6 +230,11 @@ body {
 	.carousel-caption p {
 		width: 100%;
 	}
+
+	.contact-area h3 {
+		font-size: 30px;
+	}
+
 }
 
 /* for small size */
@@ -268,26 +260,27 @@ body {
 		line-height: 1.6;
 		font-size: 20px;
 	}
+
+	.map-area {
+		width: 85%;
+		float: center;
+	}
+
+	.contact-area h3 {
+		font-size: 30px;
+	}
+
+	.contact-area p {
+		font-size: 20px;
+		padding-right: 10rem;
+		
+	}
+
+
 }
-
-
-/* Mød os sektionen */
-.section-header h3 {
-	font-weight: 100;
-	font-size: 40px;
-	padding-top: 3rem;
-}
-
-.section-header p {
-	font-weight: 100;
-	font-size: 20px;
-	padding-top: 1.5rem;
-}
-
-/* Kontakt */
 
 .page-section2 {
-	padding: 8rem 0;
+	padding: 6rem 0;
 	font-size: 20px;
 	font-weight: 50;
 	background-color: #ffffff;
@@ -298,8 +291,14 @@ body {
 	font-size: 40px;
 }
 
+.page-section2 a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 300;
+}
+
 .faq {
-	padding-top: 8rem;
+	padding-top: 0.2rem;
 	padding-bottom: 8rem ;
 }
 

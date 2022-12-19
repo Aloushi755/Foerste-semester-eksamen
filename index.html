@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name=”robots” content=”noindex”>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     </style>
-  <title>Document</title>
+  <title>Ringkøbing Lægehus</title>
 </head>
 <body>
 
@@ -25,6 +26,9 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mt-2 ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="mødos.html">Mød os</a>
           </li>
           <li class="nav-item">
@@ -32,6 +36,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-danger" href="https://laegevejen.dk/Login">Bestil her</a>
           </li>
         </ul>
       </div>
@@ -43,37 +50,26 @@
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="assets/img/home.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h5>Din sundhed er Vores Ansvar</h5>
+          <h5>Er du træt af den lange telefonkø?</h5>
           <p>Bestil en ny tid eller forny din recept</p>
           <br>
           <br>
-          <a href="https://laegevejen.dk/Login">Bestil tid</a>
+          <a class="btn btn-danger" href="https://laegevejen.dk/Login">Bestil her</a>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="assets/img/home2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-          <h5>Vi er der til fordel for dit helbred</h5>
-          <p>Bestil en ny tid eller forny din recept</p>
-          <br>
-          <br>
-          <a href="https://laegevejen.dk/Login">Bestil tid</a>
-        </div>
-      </div>  
+      
       <div class="carousel-item">
         <img src="assets/img/home3.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h5>Din læge kender dig bedst</h5>
-          <p>Bestil en ny tid eller forny din recept</p>
+          <h5>Vi er der til fordel for dit helbred</h5>
+          <p>Bestil en tid til din læge</p>
           <br>
-          
-          <a href="https://laegevejen.dk/Login">Bestil tid</a>
+          <a class="btn btn-danger" href="https://laegevejen.dk/Login class=">Bestil tid</a>
         </div>
       </div>
     </div>
@@ -94,7 +90,7 @@
               <div class="col-lg-8 text-center">
                   <h3 class="p-6">Velkommen til Ringkøbing lægehus</h3>
                   <hr class="divider divider-light"/>
-                  <p>Denne hjemmeside orienterer dig omkring de praktiserende læger og personalet. <br> Derudover finder du praktiske informationer, forhold og aktuelle informationer.</p>
+                  <p>Denne hjemmeside orienterer dig omkring de praktiserende læger og personalet. Derudover finder du praktiske informationer, forhold og aktuelle informationer.</p>
               </div>
           </div>
       </div>
@@ -279,32 +275,30 @@
 
     <!-- Find os -->
   <div class="contact-area">
-      <div class="row">
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-          <div class="m-5">
-            <h3>Find os</h3>
+      <div class="row text-left text-md-left col-lg-12">
+        <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8 col-xs-4">
+          <div class="m-5 justify-content-left">
+            <h3 class="col-sm-6">Find os</h3>
             <p>Søibergsvej 24
               <br>
               6950 Ringkøbing
               <br>
               <br>
-              Tlf.: 96 74 30 30
+              +1 (555) 123-4567
             </p>
             <br>
-            <h3>Parkering</h3>
+            <h3 class="col-sm-6">Parkering</h3>
             <p>Når du ankommer til destinationen finder du en stor p-plads foran lægehuset. </p>
           </div>
         </div>
 
-      <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
-        <div class="map-area float-end m-5">
+      <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+        <div class="map-area float-end m-5 px-2">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2226.5072203274963!2d8.264789815681747!3d56.0791392806419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464a5ae16d40deb9%3A0xe801508f7f8299d0!2zUmluZ2vDuGJpbmcgTMOmZ2VodXM!5e0!3m2!1sda!2sdk!4v1670596644960!5m2!1sda!2sdk" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div>
   </div>
-
-
 
   <!-- footeren -->
   <footer class="bg-light text-dark pt-5 pb-4">
@@ -319,33 +313,33 @@
              6950 Ringkøbing
              <br>
             <br>
-            Tlf.: 96 74 30 30
+            <strong>Tlf.: +1 (555) 123-4567</strong>
             <br>
             <br>
             CVR nr: 80677812
             <br>
             <br>
-            Telefon tid kl: 08.00-10.00 
-            og <br> igen 10.30-12.00
+            Telefon tid kl: <strong>08.00-10.00</strong>
+            og <br> igen <strong>10.30-12.00</strong>
             </p>
         </div>
 
         <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-info"><span class="text-secondary">Akut læge</span></h5>
          
-          <p>Akut-telefon til AKUT opstået <br> sygdom fra kl. 12.00-16.00
+          <p>Akut-telefon til AKUT opstået <br> sygdom fra <strong>kl. 12.00-16.00</strong>
             <br>
             <br>
-            Tlf.: 96 74 30 31</p>
+            <strong>Tlf.: +1 (555) 123-4567</strong></p>
         </div>
 
         <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-info"><span class="text-secondary">Lægevagten</span></h5>
          
-          <p>Fra kl. 16.00-08.00 i hverdage, samt <br> i weekend og på helligdage: hele <br> døgnet.
+          <p>Fra <strong> kl. 16.00-08.00</strong> i hverdage, samt <br> i weekend og på helligdage: hele <br> døgnet.
             <br>
             <br>
-            Tlf.: 70113131</p>
+            <strong>Tlf.: +1 (555) 123-4567</strong></p>
         </div>
       </div>
     </div>
@@ -353,7 +347,7 @@
 
   <div class="col-12 text-center text-md-center">
     <div class="copyright">
-      <p> COPYRIGHT</p>
+      <p> COPYRIGHT (Dette er et skoleprojekt)</p>
     </div>
   </div>
 
