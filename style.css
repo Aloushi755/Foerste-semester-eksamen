@@ -1,5 +1,5 @@
 * {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -18,7 +18,7 @@ body {
 
 .card-body a {
 	text-decoration: none;
-	color: rgb(145, 0, 0);
+	color: rgb(145, 0, 0) !important;
 	padding: 0.8rem;
 	border: 1px solid rgb(145, 0, 0);
 }
@@ -36,8 +36,8 @@ body {
 }
 
 .map-area {
-	width: 600px;
-	height: 465px;
+	width: 400px;
+	height: 400px;
 	background-color: #fff;
 	box-shadow: rgba(0, 0, 0, 0.35);
 }
@@ -46,12 +46,21 @@ body {
 	width: 100%;
 	height: 100%;
 	border: none;
-	
+}
+
+.find h3 {
+	font-weight: bold;
+	font-size: 45px;
+}
+
+.find a {
+	text-decoration: none;
+	color: #000;
 }
 
 .contact-area h3 {
 	font-weight: 100;
-	font-size: 50px;
+	font-size: 30px;
 	margin-left: 70px;
 }
 
@@ -61,6 +70,12 @@ body {
 	margin-left: 70px;
 }
 
+.contact-area a {
+	text-decoration: none;
+	color: #000;
+
+}
+
 .page-section {
 	padding: 8rem 0;
 	font-size: 20px;
@@ -68,9 +83,14 @@ body {
 	background-color: #ededed;
 }
 
-.page-section h3 {
+.page-section h1 {
 	font-weight: 100;
 	font-size: 40px;
+}
+
+.page-section h2 {
+	font-weight: 100;
+	font-size: 35px;
 }
 
 .page-section p {
@@ -98,15 +118,15 @@ body {
 
 .carousel-caption {
 	bottom: 90px;
-	padding: 40px;
+	padding: 15px;
 	z-index: 2;
 }
 
-.carousel-caption h5 {
+.carousel-caption h2 {
 	font-size: 45px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin-top: 25px;
+	margin-top: 80px;
 	font-weight: 100;
 }
 
@@ -121,7 +141,7 @@ body {
 
 .carousel-caption a {
 	font-size: 20px;
-	font-weight: 200;
+	font-weight: 400;
 	padding: 5px 25px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -138,14 +158,59 @@ body {
 	z-index: 1;
 }
 
+#mainNav {
+	box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.30);
+	background-color: #fff;
+	transition: background-color 1s ease;
+  }
+
 .navbar-light .navbar-brand {
 	color: #000;
-	font-size: 25px;
+	font-size: 22px;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 900;
 	letter-spacing: 2px;
 	padding: 1rem 0;
 } 
+
+@media only screen and (min-width: 100px) and (max-width: 595px) {
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	padding-left: 20px;
+}
+
+.map-area {
+	width: 300px;
+	height: 200px;
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.35);
+}
+
+.map-area iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.find h3 {
+	font-weight: 100;
+	font-size: 30px;
+}
+
+.find p {
+	font-weight: 50;
+	font-size: 15px;
+}
+
+footer {
+	padding-left: 15px;
+}
+
+}
 
 .navbar ul li {
 	list-style: none;
@@ -153,13 +218,18 @@ body {
 	margin: 0 20px;
 	position: relative;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 1px;
+}
+
+.navbar-brand .text-danger {
+	font-weight: 600;
+	font-weight: bold;
 }
 
 .navbar ul li a {
 	font-size: 15px;
-	font-weight: 300;
+	font-weight: 400;
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
@@ -180,15 +250,45 @@ body {
 	color: #000;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
-}
 
 .w-100 {
 	height: 120vh;
 	object-fit: cover;
 	margin-top: 60px;
 }
+
+@media only screen and (min-width: 100px) and (max-width: 576px) {
+	.w-100 {
+		object-fit: cover;
+		margin-top: 60px;
+		height: 100vh;
+		
+	}
+
+	.carousel-caption h2 {
+		font-size: 40px;
+	}
+
+	.carousel-caption {
+		padding-bottom: 50px;
+		font-size: 20px;
+	}
+
+	.page-section2 h3 {
+		font-weight: 100;
+		font-size: 27px;
+	}
+
+	.page-section2 p {
+		font-weight: 60;
+		font-size: 18px;
+	}
+
+	.page-section h1 {
+		font-size: 30px;
+	}
+
+	}
 
 
 /* Mød os section */
@@ -207,7 +307,7 @@ body {
 }
 
 /* responsive css */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
+@media only screen and (min-width: 993px) and (max-width: 1396px) {
 	.carousel-caption {
 		bottom: 150px;
 	}
@@ -219,6 +319,32 @@ body {
 	.contact-area h3 {
 		font-size: 30px;
 	}
+
+	.find h3 {
+		font-weight: 100;
+		font-size: 35px;
+		padding-left: 20px;
+	}
+
+	.find p {
+		font-weight: 50;
+		padding-right: 300px;
+		padding-left: 20px;
+	}
+
+	.map-area {
+		width: 600px;
+		height: 420px;
+		background-color: #fff;
+		box-shadow: rgba(0, 0, 0, 0.35);
+	}
+	
+	.map-area iframe {
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+
 }
 
 /* for medium size */
@@ -233,6 +359,19 @@ body {
 
 	.contact-area h3 {
 		font-size: 30px;
+	}
+
+	.find h3{
+		font-weight: 100;
+		font-size: 30px;
+		padding-right: 120px;
+	}
+
+
+	.find p{
+		font-weight: 50;
+		font-size: 15px;
+		padding-right: 120px;
 	}
 
 }
@@ -276,7 +415,6 @@ body {
 		
 	}
 
-
 }
 
 .page-section2 {
@@ -286,7 +424,12 @@ body {
 	background-color: #ffffff;
 }
 
-.page-section2 h3 {
+.page-section2 h1 {
+	font-weight: 100;
+	font-size: 40px;
+}
+
+.page-section2 h2 {
 	font-weight: 100;
 	font-size: 40px;
 }
@@ -297,9 +440,20 @@ body {
 	font-weight: 300;
 }
 
+
+
 .faq {
 	padding-top: 0.2rem;
 	padding-bottom: 8rem ;
+}
+
+.page-section .faq-header {
+	padding-left: 50px;
+}
+
+.accordion-body p {
+	font-weight: 80;
+	font-size: 15px;
 }
 
 .pic::before {
@@ -311,4 +465,23 @@ body {
 	left: 0;
 	background: rgba(0, 0, 0, 0.3);
 	z-index: 1;
+}
+
+.text-secondary {
+	font-weight: 800;
+}
+
+footer p {
+	font-weight: 300;
+}
+
+#mainfooter a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+.row a {
+	text-decoration: none;
+	color: #000;
 }
