@@ -25,12 +25,21 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- navbar section -->
+<!-- Navbar expand udfolder menuen vertikalt -->
+<!-- Navbar light giver menuen en lys farve -->
+<!-- Fixed top gør at menuen stadig vises, selvom man scroller ned -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="index.html"><span class="text-danger">RINGKØBING</span> LÆGEHUS </a>
+      <!-- Navbar-toggler er en bootstrap class der bruges når man vil anvende en burgermenu på mobilen -->
+      <!-- Type definere at følgende type er en "knap" -->
+      <!-- data-bs-toggle collapser den expanded menu til en burgermenu -->
+      <!-- Når alle følgende classes er defineret, så henter man navbar-toggler-icon fra bootstrap icons -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Collapse gør at menuen altid er collaped på mobilversion. Hvis ikke man tilføjer denne class, vil burgermenuen altid stå åben -->
+      <!-- Navbar-collapse gør at menu punkterne er synlige på large screen, men collapsed under burgermenuen på mobilversionen -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mt-2 ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -58,7 +67,7 @@
     <div class="container px-5 px-lg-5 pt-5">
         <div class="row">
             <div class="col-lg-8 text-left">
-                <h3 class="p-6 pb-4 pt-3">Email-konsultation <i class="bi bi-envelope p-3"></i></h3>
+                <h2 class="p-6 pb-4 pt-3">Email-konsultation <i class="bi bi-envelope p-3"></i></h2>
                 <p class="p-6">Kan benyttes via <a href="www.lægevejen.dk">www.lægevejen.dk</a> til korte afgrænsede problemstillinger. Der må påregnes op til 3 hverdage til svar, hvorfor email-konsultation ikke egner sig til akutte problemstillinger.
 
                   Man kan ikke bestille tid til blodprøver og hos sygeplejersker via nettet.</p>
@@ -66,7 +75,7 @@
         </div>
         <div class="row">
             <div class="col-lg-8 text-left pt-5">
-                <h3 class="p-6 pb-4">Telefonkonsultation<i class="bi bi-telephone p-3"></i></h3>
+                <h2 class="p-6 pb-4">Telefonkonsultation<i class="bi bi-telephone p-3"></i></h2>
                 <p class="p-6">Lægerne har “ringe tilbage tid” alle hverdage mellem <strong> kl. 11.00 og kl. 13.00.</strong> <br> For telefonkonsultation samme dag, kontaktes lægehuset inden kl. 11.00 og det aftales med sekretæren, hvornår lægen ringer tilbage. <br> <br> Det er vigtigt at du tager telefonen i det aftalte tidsrum, når lægen ringer til dig.
                   Sekretæren kan i mange tilfælde give svar på diverse prøver og spørgsmål..</p>
             </div>

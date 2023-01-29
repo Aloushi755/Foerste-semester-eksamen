@@ -68,12 +68,18 @@
 </nav>  
 
   <!-- homepage section -->
+  <!-- carouselExampleCaptions er "parent" til alle mine div's -->
+  <!-- carousel slide = giver carousellen en slide animation -->
+  <!-- Carousel = uden denne class, vil sliden ikke bevæge sig alene -->
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <!-- Carousel-indicators = knapperne i bunden af carousel (de to streger) -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     </div>
-    <div class="carousel-inner">
+    <!-- Carousel inner er en class jeg har defineret for at lave et overlay over billedet, som jeg kan ændre kontrasten på -->
+    <div class="carousel-inner"> 
+      
       <div class="carousel-item active">
         <img src="assets/img/home.jpg" class="d-block w-100" alt="lægehus">
         <div class="carousel-caption">
@@ -85,6 +91,7 @@
       </div>
       
       <div class="carousel-item">
+        <!-- d-block w-100 bruges til at definere størrelsen på billedet. Derudover er det en responsive class man arbejder med, som også gøre billedet responsive -->
         <img src="assets/img/home3.jpg" class="d-block w-100" alt="tidsbestilling">
         <div class="carousel-caption">
           <h2>Vi er der til fordel for dit helbred</h2>
@@ -94,10 +101,17 @@
         </div>
       </div>
     </div>
+    
+    <!-- carousel-control-prev er en class der definere funktion "previous". Uden denne class vil det ikke være muligt at klikke sig tilbage -->
+    <!-- Data-bs-slide fortæller carousel at den skal slide til "previous" billede, når man klikker på knappen previous -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <!-- carousel-control-prev-icon henter ikonet fra bootstrap libary -->
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- Viusually hidden er en class der gemmer teksten "previous" væk, sådan at der kun er pilen der bliver -->
       <span class="visually-hidden">Previous</span>
     </button>
+    <!-- carousel-control-next er classen der definere motion "next". Uden denne class vil det ikke være muligt at klikke sig videre til næste slide -->
+    <!-- data-bs-slide="next" er den class der henvender os videre til næste slide. Uden denne class, vil næste slide ikke blive vist -->
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
@@ -314,7 +328,8 @@
               </div>
               <div class="col-6 col-lg-6 col-md-6 pb-5">
                 <div class="map-area float-end">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2226.5072203274963!2d8.264789815681747!3d56.0791392806419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464a5ae16d40deb9%3A0xe801508f7f8299d0!2zUmluZ2vDuGJpbmcgTMOmZ2VodXM!5e0!3m2!1sda!2sdk!4v1670596644960!5m2!1sda!2sdk" allowfullscreen="" loading="lazy"></iframe>
+                  <!-- iframe tagget bruges til at udvælge embeded code fra et dokument, og dermed display det i ens egen kode -->
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2226.5072203274963!2d8.264789815681747!3d56.0791392806419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464a5ae16d40deb9%3A0xe801508f7f8299d0!2zUmluZ2vDuGJpbmcgTMOmZ2VodXM!5e0!3m2!1sda!2sdk!4v1670596644960!5m2!1sda!2sdk"></iframe>
                 </div>
               </div>
         </div>
@@ -355,6 +370,7 @@
         </div>
 
         <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+          <!-- text-info er en class der giver farve -->
           <h5 class="text-uppercase mb-4 font-weight-bold text-info"><span class="text-secondary">Lægevagten</span></h5>
          
           <p>Fra <strong> kl. 16.00-08.00</strong> i hverdage, samt <br> i weekend og på helligdage: hele <br> døgnet.</p>
